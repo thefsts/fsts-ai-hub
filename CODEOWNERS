@@ -1,0 +1,14 @@
+# Default ownership
+* @thefsts
+
+# Security- and governance-sensitive areas
+/LICENSE @thefsts
+/SECURITY.md @thefsts
+/.github/ @thefsts
+/docs/governance/ @thefsts
+/docs/security/ @thefsts
+/services/policy-engine/ @thefsts
+/services/approval-engine/ @thefsts
+/services/audit-service/ @thefsts
+/packages/auth/ @thefsts
+/packages/security/ @thefsts

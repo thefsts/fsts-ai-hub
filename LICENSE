@@ -1,0 +1,69 @@
+FSTS SOURCE-AVAILABLE LICENSE
+Version 1.0 — September 21, 2026
+
+Copyright (c) 2026 Full Stack Tech & Solutions LLC ("FSTS").
+All rights reserved.
+
+1. DEFINITIONS
+
+"Software" means the source code, documentation, configuration, and other materials made available in this repository.
+
+"Authorized Party" means FSTS and any employee, contractor, customer, partner, or contributor whom FSTS has authorized in writing for a stated use.
+
+"Production Use" means operating the Software for live business, customer, commercial, governmental, or revenue-generating activity.
+
+2. LIMITED PERMISSION
+
+Subject to this License, you may view, copy, and modify the Software solely to evaluate its functionality and security, perform non-production testing or research, prepare and submit proposed contributions to FSTS, or perform work expressly authorized in writing by FSTS.
+
+This permission is non-exclusive, non-transferable, revocable, and does not convey ownership of the Software or any FSTS intellectual property.
+
+3. RESTRICTIONS
+
+Unless FSTS grants prior written permission, you may not:
+
+a. use or deploy the Software in production;
+b. sell, sublicense, lease, host, monetize, or commercially exploit the Software or a derivative work;
+c. offer the Software or a derivative work as a service, including a competing hosted, managed, orchestration, gateway, agent, governance, or AI platform;
+d. redistribute the Software or a derivative work, whether branded, unbranded, or white-labeled;
+e. remove or alter copyright, attribution, licensing, trademark, or ownership notices;
+f. use FSTS names, brands, logos, product names, or trademarks except to make accurate factual reference to the origin of the Software;
+g. use the Software or repository contents to train, fine-tune, or develop a competing commercial artificial-intelligence model or platform;
+h. use the Software to violate law, infringe rights, bypass security controls, or process data without proper authorization; or
+i. represent that FSTS endorses, certifies, or supports your use.
+
+4. CONTRIBUTIONS
+
+Unless a separate written agreement applies, by submitting a contribution you represent that you have the right to submit it and grant FSTS a perpetual, worldwide, irrevocable, royalty-free, transferable, and sublicensable license to use, reproduce, modify, distribute, display, perform, commercialize, and relicense that contribution as part of FSTS products and services.
+
+5. OWNERSHIP
+
+FSTS and its licensors retain all right, title, and interest in the Software, including all intellectual-property rights. No rights are granted by implication or estoppel. FSTS may license the Software to others under different terms.
+
+6. CONFIDENTIALITY AND DATA
+
+Public source code is not confidential. Credentials, non-public security information, customer information, personal data, production prompts, and other protected information must not be submitted to this repository. This License grants no right to access or process FSTS or customer systems or data.
+
+7. TERMINATION
+
+Your rights under this License terminate automatically if you breach its terms. Upon termination, you must stop using the Software and destroy copies in your possession or control, except where retention is required by law. Sections 3 through 10 survive termination.
+
+8. DISCLAIMER
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. YOU BEAR ALL RISK ARISING FROM YOUR USE OR INABILITY TO USE THE SOFTWARE.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, FSTS AND ITS AFFILIATES, OFFICERS, EMPLOYEES, CONTRACTORS, AND LICENSORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, REVENUE, BUSINESS, OR GOODWILL, ARISING FROM OR RELATED TO THE SOFTWARE OR THIS LICENSE.
+
+10. GOVERNING LAW
+
+This License is governed by the laws of the State of Texas, United States, without regard to conflict-of-law principles. Any dispute must be brought in a court of competent jurisdiction located in Texas, and each party consents to that jurisdiction and venue.
+
+11. COMMERCIAL AND PRODUCTION LICENSING
+
+For production, commercial, redistribution, white-label, or other permissions outside this License, obtain a separate written agreement from Full Stack Tech & Solutions LLC.
+
+12. ENTIRE LICENSE
+
+This License constitutes the complete license for the Software unless FSTS and the applicable party sign a separate written agreement. If any provision is unenforceable, the remaining provisions remain effective.
