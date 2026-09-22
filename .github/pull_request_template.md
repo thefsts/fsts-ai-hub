@@ -55,7 +55,8 @@
 
 ## Screenshots / Recordings
 
-<!-- If this changes the command center UI, include before/after. -->
+<!-- If this changes a user-facing surface, include before/after. Phase 1 is a
+headless backend with no frontend, so this is usually not applicable. -->
 
 ## Notes for Reviewers
 

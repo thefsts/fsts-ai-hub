@@ -127,6 +127,17 @@ default is deny.
   connect through versioned adapters and must revalidate actions before applying
   them.
 
+### 3.4 Convex backend
+
+The headless Convex backend (`convex/*`) hosts the database, function runtime,
+scheduler, and HTTP API. It defines the organizations, tenants, connected
+systems, service identities, provider price versions, budget policies, AI usage
+records, and audit events that the services and connectors persist to. Every
+read path is index-backed, functions are internal by default, and the only
+public production surface is `GET /v1/health`. See
+`docs/architecture/CONVEX-BACKEND.md` for the schema, function surface, service
+identity model, and cost persistence model.
+
 ## 4. Request Lifecycle
 
 A governed request flows through the following stages. Each stage can deny.

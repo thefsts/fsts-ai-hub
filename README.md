@@ -76,6 +76,25 @@ pnpm test
 pnpm verify   # format:check + lint + typecheck + test + build + scan:secrets
 ```
 
+## Convex backend
+
+Phase 1 is a headless Convex backend. The schema, functions, and HTTP actions
+live in `convex/`. The only public production surface is `GET /v1/health`, which
+returns the service, status, architecture, and version and sets
+`Cache-Control: no-store` and `X-Content-Type-Options: nosniff`.
+
+```bash
+pnpm convex:dev       # link and run against the dev deployment
+pnpm convex:push      # push functions once (convex dev --once)
+pnpm convex:codegen   # regenerate convex/_generated
+pnpm test:convex      # run the Convex schema/function/HTTP tests
+```
+
+The backend is bound to a single pre-existing deployment and never creates a
+second project, database, or deployment. See
+`docs/architecture/CONVEX-BACKEND.md` for the schema, function surface, service
+identity model, and cost persistence model.
+
 ## The mandatory priority order
 
 Every routing and optimization decision respects this order. A later

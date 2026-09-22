@@ -164,3 +164,26 @@ Cost data flows from provider usage to the cost-optimization engine:
 
 Historical pricing is reproducible: a cost record references the exact price
 version used, so re-running a calculation yields the same result.
+
+## 11. Persistence (Convex)
+
+Phase 1 persists to the headless Convex backend. The tables that carry the data
+described above are:
+
+- `organizations`, `tenants`, `connectedSystems` — the ownership and isolation
+  hierarchy. PlayRaise is stored as a `client_owned` connected system.
+- `serviceIdentities` — machine-to-machine identities. Only a secret **digest**
+  is stored; plaintext secrets never enter the database.
+- `providerPriceVersions` — versioned pricing. A new price is a new version with
+  a later `effectiveAt`; historical versions are never overwritten.
+- `budgetPolicies` — warning thresholds, hard limits, and enforcement actions,
+  scoped by tenant and scope kind.
+- `aiUsageRecords` — per-call usage and cost attribution, keyed by tenant,
+  connected system, correlation ID, and idempotency key.
+- `auditEvents` — tamper-evident decision records, retrievable by correlation ID
+  and by tenant and time.
+
+Every read path is index-backed. Cross-tenant and cross-system reads are denied
+by default, and a read for an unknown or empty scope returns no rows rather than
+a default allow. See `docs/architecture/CONVEX-BACKEND.md` for the full schema
+and index list.
