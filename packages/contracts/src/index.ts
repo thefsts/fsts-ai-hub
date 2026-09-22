@@ -16,6 +16,8 @@ export * from "./tools.js";
 export * from "./prompts.js";
 export * from "./memory.js";
 export * from "./execution.js";
+export * from "./execution-authorization.js";
+export * from "./service-auth.js";
 export * from "./approvals.js";
 export * from "./audit.js";
 export * from "./suspension.js";
