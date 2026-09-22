@@ -12,4 +12,5 @@ export * from "./budget.js";
 export * from "./cache.js";
 export * from "./attribution.js";
 export * from "./pricing.js";
+export * from "./estimate.js";
 export * from "./guards.js";
