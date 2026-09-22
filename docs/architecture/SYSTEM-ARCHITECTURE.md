@@ -48,8 +48,9 @@ default is deny.
 
 ```
 +---------------------------------------------------------------+
-|  Command Center (apps/command-center)  |  Developer Portal      |
-|  Authenticated governance console      |  (apps/developer-portal)|
+|  Headless Convex Backend (convex/*)                            |
+|  Schema | functions | HTTP actions | scheduler                 |
+|  Public surface: GET /v1/health (no frontend in Phase 1)       |
 +---------------------------------------------------------------+
 |  Product Adapters (connectors/systems)                         |
 |  Versioned product-side adapter boundary                       |
@@ -61,7 +62,7 @@ default is deny.
 +---------------------------------------------------------------+
 |  Shared Packages (packages/*)                                  |
 |  contracts | security | policy | auth | redaction | telemetry  |
-|  config | testing | sdk | ui                                   |
+|  config | testing | sdk                                        |
 +---------------------------------------------------------------+
 |  External Connectors (connectors/*)                            |
 |  api-hub | compliance-hub                                      |
@@ -90,8 +91,6 @@ default is deny.
   the contracts.
 - **`@fsts/sdk`** — the client SDK product systems use to submit governed
   requests.
-- **`@fsts/ui`** — the design system, including honest capability badges and
-  empty states.
 
 ### 3.2 Services
 
@@ -182,8 +181,11 @@ non-compliant, or incapable of the required task.
 ## 7. Deployment Topology (target)
 
 The Hub is designed as a set of independently deployable services behind a
-single authenticated control plane. The Command Center and Developer Portal are
-Next.js applications. Services are Node.js 24 TypeScript packages. The monorepo
-uses pnpm workspaces and Turborepo. This document describes the target topology;
-the current Phase 1 deliverable is the foundation and contracts, not a
-production deployment.
+single authenticated control plane. Phase 1 is a **headless Convex backend**: the
+Convex deployment hosts the database, function runtime, scheduler, and HTTP API,
+and the only public production surface is `GET /v1/health`. Services are Node.js
+24 TypeScript packages. The monorepo uses pnpm workspaces and Turborepo. There is
+no frontend, no Clerk, and no Vercel in Phase 1; a future admin frontend is
+**deferred — not implemented and not deployed**. This document describes the
+target topology; the current Phase 1 deliverable is the foundation, contracts,
+and the Convex backend, not a production deployment.

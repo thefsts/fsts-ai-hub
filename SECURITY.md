@@ -85,7 +85,7 @@ Out of scope:
 This repository is **public**. It must never contain:
 
 - Production API keys, OAuth secrets, or model-provider keys.
-- Database, Clerk, or Convex deployment secrets.
+- Database or Convex deployment secrets.
 - Private signing keys or certificates.
 - Customer, personal, or production data.
 - Production prompts containing sensitive information.

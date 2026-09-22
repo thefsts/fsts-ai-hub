@@ -7,8 +7,8 @@
 ## Context
 
 The FSTS AI Hub spans shared contracts, security primitives, services,
-connectors, and two applications. These pieces evolve together and share a
-canonical domain model. Splitting them into separate repositories would force
+connectors, and a headless Convex backend. These pieces evolve together and share
+a canonical domain model. Splitting them into separate repositories would force
 version skew across the contract boundary and slow coordinated change.
 
 ## Decision
@@ -22,7 +22,9 @@ Adopt a single monorepo using:
 - **Zod** for runtime validation of every cross-system contract.
 - **Vitest** for tests.
 
-The workspace layout is `apps/*`, `services/*`, `packages/*`, `connectors/*`.
+The workspace layout is `convex/` (headless backend), `services/*`,
+`packages/*`, and `connectors/*`. Phase 1 has no frontend workspace; the earlier
+`apps/*` shells were removed and are preserved only in Git history.
 
 ## Consequences
 

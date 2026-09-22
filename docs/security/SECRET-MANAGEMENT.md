@@ -16,7 +16,7 @@ The public repository must never contain:
 - production API keys or model-provider keys
 - OAuth client secrets
 - database credentials or connection strings with credentials
-- Clerk or Convex secrets
+- Convex deployment secrets or deployment keys
 - private signing keys
 - customer data or PII
 - production prompts

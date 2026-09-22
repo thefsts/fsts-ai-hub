@@ -111,6 +111,7 @@ evidence.
 ## 11. Current Implementation Status
 
 The approval state machine, validation logic, and category list are implemented
-and tested in `services/approval-engine`. The approval UI in the Command Center
-is an interface-only shell with honest empty states. Persistence and human
-approver authentication are not yet integrated.
+and tested in `services/approval-engine`. Phase 1 is a headless Convex backend:
+there is no approval UI. A future approval console is **deferred — not
+implemented and not deployed**. Persistence and human approver authentication are
+not yet integrated.

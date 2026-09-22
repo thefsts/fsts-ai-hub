@@ -6,8 +6,9 @@ FSTS systems and authorized client environments.
 
 Owner: **Full Stack Tech & Solutions LLC**
 License: **FSTS Source-Available License v1.0** (see `LICENSE`) — not open source.
-Status: **Foundation (Phase 1)** — contracts, security primitives, services,
-connectors, and application shells. Not a production deployment.
+Status: **Foundation (Phase 1)** — a headless Convex backend: contracts, security
+primitives, services, connectors, and the Convex schema/functions. No frontend is
+implemented or deployed. Not a production deployment.
 
 ## What this is
 
@@ -36,9 +37,7 @@ record. If it cannot answer, the action does not proceed.
 ## Repository layout
 
 ```
-apps/
-  command-center/       Authenticated governance console (Next.js)
-  developer-portal/     Integration docs surface (Next.js)
+convex/                 Headless Convex backend (schema, functions, HTTP actions)
 services/
   orchestration/        Execution gates and plan building
   model-gateway/        Mandatory provider-neutral model routing
@@ -63,7 +62,6 @@ packages/
   config/               Typed configuration loading
   testing/              Deterministic, contract-conformant fixtures
   sdk/                  Client SDK for product systems
-  ui/                   Design system with honest capability badges
 docs/                   Architecture, governance, security, integrations, ops, ADRs
 ```
 

@@ -74,10 +74,10 @@ denies execution. An unknown state is treated as "stopped."
 ## 8. Current Implementation Status
 
 The suspension contract and the deny-on-suspension behavior are **implemented
-and tested** in `packages/contracts` and the security and routing layers. The
-global emergency stop control surface in the Command Center is an
-**interface-only** shell with an honest empty state. Wiring the control to a
-live, persisted state store is a Phase 2 concern.
+and tested** in `packages/contracts` and the security and routing layers. Phase 1
+is a headless Convex backend: there is no emergency-stop control surface. A
+future control surface is **deferred — not implemented and not deployed**. Wiring
+the control to a live, persisted state store is a Phase 2 concern.
 
 ## 9. Audit
 

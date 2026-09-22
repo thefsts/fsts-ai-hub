@@ -12,7 +12,7 @@ assignees: []
 
 ## Affected Component
 
-<!-- e.g. packages/contracts, services/policy-engine, apps/command-center -->
+<!-- e.g. packages/contracts, services/policy-engine, convex/schema.ts -->
 
 ## Steps to Reproduce
 
