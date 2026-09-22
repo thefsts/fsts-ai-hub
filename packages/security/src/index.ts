@@ -207,3 +207,5 @@ export function combineDecisions(decisions: AuthzDecision[]): AuthzDecision {
   if (denied) return denied;
   return ALLOW("all checks passed");
 }
+
+export * from "./service-identity.js";

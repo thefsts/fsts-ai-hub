@@ -18,6 +18,9 @@ importers:
       "@types/node":
         specifier: ^24.0.0
         version: 24.13.6
+      convex-test:
+        specifier: ^0.0.59
+        version: 0.0.59(convex@1.46.0)
       prettier:
         specifier: ^3.3.3
         version: 3.9.8
@@ -27,6 +30,9 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.9.3
+      vite:
+        specifier: ^8.0.0
+        version: 8.3.0(@types/node@24.13.6)(esbuild@0.27.0)
       vitest:
         specifier: ^4.1.11
         version: 4.1.11(@types/node@24.13.6)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.27.0))
@@ -932,6 +938,14 @@ packages:
         integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==,
       }
 
+  convex-test@0.0.59:
+    resolution:
+      {
+        integrity: sha512-2bxjk245RmF3RxrsDR86vbPCzGRnEmpqHbjVbs6bSupt18JadtvOR7Lao2+GcdYJIzny499aloDysYnoFPWP4A==,
+      }
+    peerDependencies:
+      convex: ^1.43.0
+
   convex@1.46.0:
     resolution:
       {
@@ -1578,6 +1592,10 @@ snapshots:
   chai@6.2.2: {}
 
   convert-source-map@2.0.0: {}
+
+  convex-test@0.0.59(convex@1.46.0):
+    dependencies:
+      convex: 1.46.0
 
   convex@1.46.0:
     dependencies:
