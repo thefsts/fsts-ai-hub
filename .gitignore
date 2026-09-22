@@ -22,6 +22,7 @@ coverage/
 *.log
 tmp/
 .cache/
+.tools/
 
 # Editors and operating systems
 .idea/
