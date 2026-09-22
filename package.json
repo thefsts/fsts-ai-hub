@@ -16,7 +16,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
-    "typecheck": "turbo run typecheck",
+    "typecheck": "turbo run typecheck && pnpm typecheck:convex",
+    "typecheck:convex": "tsc -p tsconfig.json --noEmit",
     "test": "turbo run test",
     "test:contract": "turbo run test:contract",
     "test:security": "turbo run test:security",
@@ -24,7 +25,13 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "audit:deps": "pnpm audit --audit-level=high",
     "scan:secrets": "node scripts/scan-secrets.mjs",
+    "convex:codegen": "convex codegen",
+    "convex:dev": "convex dev",
+    "convex:push": "convex dev --once",
     "verify": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm scan:secrets"
+  },
+  "dependencies": {
+    "convex": "^1.31.6"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

@@ -9,17 +9,22 @@ jspm_packages/
 dist/
 build/
 out/
-.next/
 .turbo/
 *.tsbuildinfo
 coverage/
 .nyc_output/
+
+# Convex local state (deployment config, logs). The committed convex/_generated/
+# directory is intentionally tracked; only local state is ignored.
+.convex/
+convex/.env.local
 
 # Environment files — NEVER commit real secrets
 .env
 .env.*
 !.env.example
 *.local
+.env.local
 
 # Logs
 logs/
