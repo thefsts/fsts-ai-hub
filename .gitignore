@@ -12,6 +12,7 @@ coverage/
 .env
 .env.*
 !.env.example
+.convex/
 *.pem
 *.key
 *.p12

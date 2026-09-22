@@ -28,35 +28,19 @@ FSTS-owned products may connect as governed first-party systems. Client-owned pr
 
 The AI Hub will integrate with the FSTS API Hub for governed service connectivity and the FSTS Compliance Hub for policy, evidence, and control alignment. Those platforms remain independently deployable systems with separate responsibilities.
 
+## Phase 1 architecture
+
+The AI Hub begins as a headless Convex backend. Convex owns the database, functions, schedules, and versioned HTTP API. Phase 1 has no custom frontend, Clerk integration, or Vercel deployment. A private administrative Command Center may be added later without replacing the backend.
+
 ## Planned repository layout
 
 ```text
-apps/
-  command-center/       Administrative and operational control plane
-  developer-portal/     Integration onboarding and documentation
-services/
-  orchestration/        Agent and workflow coordination
-  model-gateway/        Provider routing, fallback, and metering
-  agent-runtime/        Governed agent execution
-  policy-engine/        Authorization and policy decisions
-  approval-engine/      Human-in-the-loop approvals
-  audit-service/        Tamper-evident execution records
-  memory-service/       Scoped memory and knowledge access
-  cost-control/         Usage budgets and cost guardrails
-packages/
-  contracts/            Versioned shared schemas and events
-  sdk/                  Supported integration clients
-  auth/                 Workload identity and authorization helpers
-  telemetry/            Tracing, metrics, and correlation
-  security/             Security primitives and redaction
-  testing/              Contract and certification utilities
-  ui/                   Shared control-plane components
-connectors/
-  api-hub/              FSTS API Hub integration
-  compliance-hub/       FSTS Compliance Hub integration
-  systems/              Product-specific adapters
+convex/                  Data model, backend functions, schedules, and HTTP API
+src/contracts/           Versioned runtime-validated system contracts
+src/cost/                Cost estimation and optimization primitives
 docs/
   architecture/         System design and decision records
+  decisions/            Architecture decision records
   governance/           AI governance and operating policies
   security/             Threat models and security requirements
   integrations/         Product onboarding specifications

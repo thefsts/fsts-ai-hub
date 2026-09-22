@@ -1,0 +1,28 @@
+{
+  "name": "@fsts/ai-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Headless AI governance, orchestration, and cost optimization backend for FSTS systems.",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "check": "pnpm typecheck && pnpm test",
+    "convex:dev": "convex dev",
+    "convex:push": "convex dev --once",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "convex": "^1.31.6",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
