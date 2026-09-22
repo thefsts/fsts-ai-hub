@@ -1,0 +1,38 @@
+{
+  "name": "@fsts/policy-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Policy Engine — evaluates versioned policies and produces deny-by-default decisions with obligations.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"lint: policy-engine (no-op)\"",
+    "test": "vitest run",
+    "test:security": "vitest run",
+    "test:isolation": "vitest run",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@fsts/contracts": "workspace:*",
+    "@fsts/security": "workspace:*",
+    "@fsts/policy": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "fsts-ai-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FSTS AI Hub — centralized AI governance, orchestration, security, routing, audit, memory, cost-control, and lifecycle platform for approved AI operating throughout FSTS systems.",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Full Stack Tech & Solutions LLC",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:contract": "turbo run test:contract",
+    "test:security": "turbo run test:security",
+    "test:isolation": "turbo run test:isolation",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "audit:deps": "pnpm audit --audit-level=high",
+    "scan:secrets": "node scripts/scan-secrets.mjs",
+    "verify": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm scan:secrets"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.3",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

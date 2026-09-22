@@ -1,0 +1,37 @@
+{
+  "name": "@fsts/audit-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Audit Service — produces normalized, tamper-evident audit events with correlation, redaction, and retention classification.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"lint: audit-service (no-op)\"",
+    "test": "vitest run",
+    "test:security": "vitest run",
+    "test:isolation": "vitest run",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@fsts/contracts": "workspace:*",
+    "@fsts/redaction": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

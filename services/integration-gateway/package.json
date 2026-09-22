@@ -1,0 +1,37 @@
+{
+  "name": "@fsts/integration-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Integration Gateway — mediates all outbound connectivity through the API Hub and consumes Compliance Hub policy references.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"lint: integration-gateway (no-op)\"",
+    "test": "vitest run",
+    "test:security": "vitest run",
+    "test:isolation": "vitest run",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@fsts/contracts": "workspace:*",
+    "@fsts/security": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

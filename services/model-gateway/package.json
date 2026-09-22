@@ -1,0 +1,38 @@
+{
+  "name": "@fsts/model-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Model Gateway — the mandatory, provider-neutral routing boundary for all model calls. Enforces approved providers, capability, compliance, residency, and cost-aware routing.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"lint: model-gateway (no-op)\"",
+    "test": "vitest run",
+    "test:security": "vitest run",
+    "test:isolation": "vitest run",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@fsts/contracts": "workspace:*",
+    "@fsts/security": "workspace:*",
+    "@fsts/cost-optimization": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
