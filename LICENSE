@@ -1,0 +1,186 @@
+FSTS SOURCE-AVAILABLE LICENSE
+Version 1.0
+Copyright (c) 2026 Full Stack Tech & Solutions LLC. All rights reserved.
+
+================================================================================
+PREAMBLE
+================================================================================
+
+This repository (the "Software") is made publicly visible by Full Stack Tech &
+Solutions LLC ("FSTS", "we", "us", or "our") solely to enable public review,
+evaluation, nonproduction testing, and authorized contributions.
+
+PUBLIC VISIBILITY DOES NOT GRANT UNRESTRICTED COMMERCIAL USE.
+
+This is a source-available license. It is NOT an open-source license. It is NOT
+the MIT License, the Apache License, the GNU General Public License, the GNU
+Affero General Public License, or any other standard open-source license. No
+rights are granted except those expressly stated in this document.
+
+================================================================================
+1. DEFINITIONS
+================================================================================
+
+"Software" means the source code, documentation, configuration, schemas,
+contracts, tests, and other materials contained in this repository, together
+with any derivative works.
+
+"FSTS Systems" means software, services, and infrastructure owned or operated
+by Full Stack Tech & Solutions LLC.
+
+"Client Systems" means software, services, and infrastructure owned or operated
+by a third party, including client-owned products such as PlayRaise.
+
+"Commercial Use" means any use of the Software, in whole or in part, that is
+intended for or results in commercial advantage or monetary compensation,
+including use in a production environment, use to deliver services to third
+parties, or use in a product offered for sale.
+
+"Production Use" means use of the Software to process real business, customer,
+or personal data, or to operate any live system that is relied upon for
+business operations.
+
+"Competing Hosted Service" means any hosted, managed, or cloud service that
+offers functionality substantially similar to the Software or that is derived
+from the Software.
+
+"Authorized Contributor" means an individual or entity that has been granted
+permission by FSTS to contribute to the Software, whether through a written
+agreement, a contributor agreement, or an explicit invitation.
+
+"Authorized Use" means use of the Software that is expressly permitted under
+Section 2 of this license.
+
+================================================================================
+2. PERMITTED USES (GRANT OF RIGHTS)
+================================================================================
+
+Subject to full compliance with this license, FSTS grants you a worldwide,
+non-exclusive, non-transferable, royalty-free, revocable right to:
+
+  (a) Public Review — read, study, and analyze the Software.
+
+  (b) Evaluation — evaluate the Software to determine whether it meets your
+      needs, including running it in a nonproduction environment.
+
+  (c) Nonproduction Testing — run, test, and modify the Software in a
+      nonproduction environment for testing, research, and educational
+      purposes, provided no real customer, personal, or production data is
+      processed.
+
+  (d) Authorized Contributions — submit contributions to the Software, subject
+      to the contribution terms in CONTRIBUTING.md and any applicable
+      contributor agreement.
+
+  (e) FSTS-Authorized Work — perform work that has been explicitly authorized
+      in writing by FSTS, including work performed by FSTS, its contractors,
+      and its designated partners.
+
+No other rights are granted. All rights not expressly granted are reserved by
+FSTS.
+
+================================================================================
+3. PROHIBITED USES
+================================================================================
+
+Without prior written permission from FSTS, you may NOT:
+
+  (a) Commercial Resale — sell, resell, sublicense, rent, lease, or otherwise
+      commercially exploit the Software or any derivative work.
+
+  (b) Production Use by Unrelated Parties — use the Software in production by
+      any party that is not FSTS or an FSTS-authorized party.
+
+  (c) Competing Hosted Services — operate, or offer to operate, any hosted,
+      managed, or cloud service that competes with the Software or any FSTS
+      product.
+
+  (d) White-Label Redistribution — rebrand, white-label, or redistribute the
+      Software as part of another product or service.
+
+  (e) Sublicensing — sublicense, distribute, or make the Software available to
+      third parties except as expressly permitted in Section 2.
+
+  (f) Removal of Attribution — remove, obscure, or alter any copyright notice,
+      license notice, attribution, or proprietary marking.
+
+  (g) Unauthorized Trademark Use — use the names, logos, or trademarks of FSTS,
+      "FSTS", "Full Stack Tech & Solutions", "FSTS AI Hub", or any confusingly
+      similar mark, without written permission.
+
+  (h) Training a Competing Commercial AI Platform — use the Software, its
+      source code, documentation, or any portion thereof to train, fine-tune,
+      distill, or otherwise develop a competing commercial artificial
+      intelligence platform or model.
+
+  (i) Accessing FSTS or Customer Systems and Data — use the Software to access,
+      connect to, or interact with FSTS Systems, Client Systems, or any FSTS or
+      customer data without explicit written authorization.
+
+  (j) Circumvention — circumvent, disable, or interfere with any security,
+      authorization, licensing, or access-control mechanism in the Software.
+
+================================================================================
+4. CONTRIBUTIONS
+================================================================================
+
+By submitting a contribution, you represent that you have the right to do so and
+you grant FSTS a perpetual, worldwide, royalty-free, irrevocable license to use,
+reproduce, modify, distribute, and relicense your contribution as part of the
+Software. Contributions are accepted only from Authorized Contributors and are
+subject to CONTRIBUTING.md.
+
+================================================================================
+5. NO WARRANTY
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. FSTS DOES NOT WARRANT THAT
+THE SOFTWARE IS ERROR-FREE, SECURE, OR SUITABLE FOR ANY PARTICULAR PURPOSE.
+
+================================================================================
+6. LIMITATION OF LIABILITY
+================================================================================
+
+IN NO EVENT SHALL FSTS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+7. TERMINATION
+================================================================================
+
+This license terminates automatically if you breach any of its terms. Upon
+termination, you must cease all use of the Software and destroy all copies.
+FSTS may revoke this license at any time. Sections 3, 5, 6, 8, and 9 survive
+termination.
+
+================================================================================
+8. THIRD-PARTY COMPONENTS
+================================================================================
+
+The Software may include or depend on third-party components governed by their
+own licenses. Those components remain subject to their respective licenses. This
+license does not alter the terms of any third-party license.
+
+================================================================================
+9. GOVERNING LAW
+================================================================================
+
+This license is governed by the laws of the jurisdiction in which Full Stack
+Tech & Solutions LLC is organized, without regard to conflict-of-law principles.
+
+================================================================================
+10. LEGAL REVIEW NOTICE
+================================================================================
+
+This license is an operational starting point for the FSTS AI Hub project. It is
+marked for final legal review before any commercial release. It does not
+constitute legal advice. FSTS should obtain review by qualified legal counsel
+before relying on this license for commercial enforcement.
+
+================================================================================
+For licensing inquiries, written permission requests, or commercial licensing,
+contact Full Stack Tech & Solutions LLC.
+================================================================================

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/thefsts/fsts-ai-hub/security/advisories/new
+    about: Report a security vulnerability privately. Do NOT open a public issue.
+  - name: Licensing and permissions
+    url: mailto:amorebey@gmail.co
+    about: Request written permission for commercial use or licensing questions.
+  - name: General questions
+    url: mailto:amorebey@gmail.co
+    about: Ask a question about the FSTS AI Hub.

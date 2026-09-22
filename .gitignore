@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+.pnp.*
+jspm_packages/
+
+# Build outputs
+dist/
+build/
+out/
+.turbo/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+
+# Convex local state (deployment config, logs). The committed convex/_generated/
+# directory is intentionally tracked; only local state is ignored.
+.convex/
+convex/.env.local
+
+# Environment files — NEVER commit real secrets
+.env
+.env.*
+!.env.example
+*.local
+.env.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+!**/test/fixtures/**/*.pem
+secrets/
+credentials/
+
+# Test artifacts
+test-results/
+playwright-report/
+.vitest/
+
+# Temporary
+tmp/
+temp/
+*.tmp
