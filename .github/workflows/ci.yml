@@ -59,6 +59,45 @@ jobs:
       - name: Secret scan
         run: pnpm scan:secrets
 
+  convex:
+    name: Convex backend validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "pnpm"
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck Convex functions
+        run: pnpm typecheck:convex
+
+      - name: Convex schema, function, and HTTP tests
+        run: pnpm test:convex
+
+      - name: Convex codegen (only when a deployment is configured)
+        env:
+          CONVEX_DEPLOYMENT: ${{ vars.CONVEX_DEPLOYMENT }}
+        run: |
+          if [ -z "$CONVEX_DEPLOYMENT" ]; then
+            echo "CONVEX_DEPLOYMENT is not configured; skipping codegen."
+            echo "The schema and functions are validated by pnpm test:convex."
+            exit 0
+          fi
+          pnpm convex:codegen
+
   dependency-audit:
     name: Dependency audit
     runs-on: ubuntu-latest
