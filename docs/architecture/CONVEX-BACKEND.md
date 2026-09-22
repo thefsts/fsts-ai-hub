@@ -78,12 +78,15 @@ Functions are written in object form with explicit `args` and `returns`
 validators. Functions are internal by default; only the minimum required surface
 is exposed.
 
-- `convex/health.ts` — `status` query. Returns
+- `convex/health.ts` — internal `status` query (`internalQuery`, not part of the
+  public Convex function surface). Returns
   `{ service: "fsts-ai-hub", status: "ok", architecture: "headless-convex", version: "0.1.0" }`.
 
 ### 4.2 HTTP actions
 
-- `convex/http.ts` — `httpRouter()` exposing `GET /v1/health`. The response sets
+- `convex/http.ts` — `httpRouter()` exposing `GET /v1/health` (the only public
+  production surface). The handler calls `internal.health.status` server-side.
+  The response sets
   `Cache-Control: no-store`, `X-Content-Type-Options: nosniff`, and
   `Content-Type: application/json`, and contains no secret material.
 

@@ -1,7 +1,15 @@
 import { v } from "convex/values";
-import { query } from "./_generated/server";
+import { internalQuery } from "./_generated/server";
 
-export const status = query({
+/**
+ * Internal health query.
+ *
+ * This is intentionally an `internalQuery` so it is NOT part of the public
+ * Convex function surface. The only public production surface is the
+ * `GET /v1/health` HTTP action in `convex/http.ts`, which calls this query
+ * server-side via `internal.health.status`.
+ */
+export const status = internalQuery({
   args: {},
   returns: v.object({
     service: v.literal("fsts-ai-hub"),
