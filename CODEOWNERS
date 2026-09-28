@@ -1,0 +1,40 @@
+# CODEOWNERS — FSTS AI Hub
+# Owner: Full Stack Tech & Solutions LLC
+#
+# All changes require owner review. This file defines default and scoped owners.
+# The canonical owner identity is thefsts <amorebey@gmail.co>.
+
+# Default owner for everything in the repository
+*                                   @thefsts
+
+# Governance, licensing, and policy — highest scrutiny
+/LICENSE                            @thefsts
+/SECURITY.md                        @thefsts
+/CONTRIBUTING.md                    @thefsts
+/CODEOWNERS                         @thefsts
+/docs/governance/                   @thefsts
+/docs/security/                     @thefsts
+
+# Shared contracts — changes affect every system
+/packages/contracts/                @thefsts
+/packages/policy/                   @thefsts
+/packages/security/                 @thefsts
+/packages/auth/                     @thefsts
+
+# Trust-boundary connectors
+/connectors/                        @thefsts
+
+# Security-critical services
+/services/policy-engine/            @thefsts
+/services/approval-engine/          @thefsts
+/services/audit-service/            @thefsts
+/services/model-gateway/            @thefsts
+/services/integration-gateway/      @thefsts
+
+# Control-plane applications
+/apps/command-center/               @thefsts
+/apps/developer-portal/             @thefsts
+
+# CI and automation
+/.github/                           @thefsts
+/scripts/                           @thefsts
